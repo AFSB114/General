@@ -1,0 +1,295 @@
+.menu {
+  position: absolute;
+}
+
+.menu-item, .menu-open-button {
+  background: #881de0;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  margin-left: -40px;
+  position: absolute;
+  top: 20px;
+  color: white;
+  text-align: center;
+  line-height: 80px;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform ease-out 200ms;
+  transition: -webkit-transform ease-out 200ms;
+  transition: transform ease-out 200ms;
+  transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+}
+
+.menu-open {
+  display: none;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -12.5px;
+  margin-top: -1.5px;
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+}
+
+.hamburger-1 {    
+  -webkit-transform: translate3d(0, -8px, 0);
+          transform: translate3d(0, -8px, 0);
+}
+
+.hamburger-2 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.hamburger-3 {
+  -webkit-transform: translate3d(0, 8px, 0);
+          transform: translate3d(0, 8px, 0);
+}
+
+.menu-open:checked + .menu-open-button .hamburger-1 {
+  -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+          transform: translate3d(0, 0, 0) rotate(45deg);
+}
+.menu-open:checked + .menu-open-button .hamburger-2 {
+  -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
+          transform: translate3d(0, 0, 0) scale(0.1, 1);
+}
+.menu-open:checked + .menu-open-button .hamburger-3 {
+  -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+          transform: translate3d(0, 0, 0) rotate(-45deg);
+}
+
+.menu {
+  left: 650px;
+  top: 400px;
+  width: 380px;
+  height: 250px;
+}
+
+.menu-item:hover {
+  background: white;
+  color: #ff4081;
+}
+.menu-item:nth-child(3) {
+  -webkit-transition-duration: 70ms;
+          transition-duration: 70ms;
+}
+.menu-item:nth-child(4) {
+  -webkit-transition-duration: 130ms;
+          transition-duration: 130ms;
+}
+.menu-item:nth-child(5) {
+  -webkit-transition-duration: 190ms;
+          transition-duration: 190ms;
+}
+.menu-item:nth-child(6) {
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+}
+.menu-item:nth-child(7) {
+  -webkit-transition-duration: 310ms;
+          transition-duration: 310ms;
+}
+
+.menu-open-button {
+  z-index: 2;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+          transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  cursor: pointer;
+}
+
+.menu-open-button:hover {
+  -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+          transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+
+.menu-open:checked + .menu-open-button {
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+          transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+}
+
+.menu-open:checked ~ .menu-item {
+  -webkit-transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+          transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+}
+.menu-open:checked ~ .menu-item:nth-child(3) {
+  -webkit-transition-duration: 160ms;
+          transition-duration: 160ms;
+  -webkit-transform: translate3d(114.42548px, 11.48084px, 0);
+          transform: translate3d(114.42548px, 11.48084px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(4) {
+  -webkit-transition-duration: 240ms;
+          transition-duration: 240ms;
+  -webkit-transform: translate3d(77.18543px, 85.2491px, 0);
+          transform: translate3d(77.18543px, 85.2491px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(5) {
+  -webkit-transition-duration: 320ms;
+          transition-duration: 320ms;
+  -webkit-transform: translate3d(0.09158px, 114.99996px, 0);
+          transform: translate3d(0.09158px, 114.99996px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(6) {
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform: translate3d(-77.04956px, 85.37192px, 0);
+          transform: translate3d(-77.04956px, 85.37192px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(7) {
+  -webkit-transition-duration: 480ms;
+          transition-duration: 480ms;
+  -webkit-transform: translate3d(-114.40705px, 11.66307px, 0);
+          transform: translate3d(-114.40705px, 11.66307px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(8) {
+  -webkit-transition-duration: 680ms;
+          transition-duration: 680ms;
+  -webkit-transform: translate3d(-220.40705px, 0, 0);
+          transform: translate3d(-220.40705px, 0, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(9) {
+  -webkit-transition-duration: 680ms;
+          transition-duration: 680ms;
+  -webkit-transform: translate3d(-180.40705px, 120.66307px, 0);
+          transform: translate3d(-180.40705px, 120.66307px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(10) {
+  -webkit-transition-duration: 680ms;
+          transition-duration: 680ms;
+  -webkit-transform: translate3d(-80.40705px, 200.66307px, 0);
+          transform: translate3d(-80.40705px, 200.66307px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(11) {
+  -webkit-transition-duration: 680ms;
+          transition-duration: 680ms;
+  -webkit-transform: translate3d(80.40705px, 200.66307px, 0);
+          transform: translate3d(80.40705px, 200.66307px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(12) {
+  -webkit-transition-duration: 680ms;
+          transition-duration: 680ms;
+  -webkit-transform: translate3d(180.40705px, 120.66307px, 0);
+          transform: translate3d(180.40705px, 120.66307px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(13) {
+  -webkit-transition-duration: 680ms;
+          transition-duration: 680ms;
+  -webkit-transform: translate3d(220.40705px, 0, 0);
+          transform: translate3d(220.40705px, 0, 0);
+}
+
+      .margen {
+        width: 100%;
+        height: 733px;
+        border: 2px solid black;
+        background-color: rgb(0, 0, 0);
+        position: relative;
+      }
+      
+      .estrellas {
+        width: 100%;
+        height: 100%;
+      }
+      .brillo {
+        position: absolute;
+        left: 405px;
+        top: 10px;
+        width: 500px;
+        height: 500px;
+      }
+      .constelacion {
+        position: absolute;
+        right: 200px;
+        top: 280px;
+        width: 250px;
+        height: 250px;
+      }
+      .perro {
+        position: absolute;
+        left: 170px;
+        top: 300px;
+        width: 370px;
+        height: 370px;
+      }
+
+      .element {
+        position: absolute;
+        top: 170px;
+        left: 500px;
+        color: #ffffff;
+        font-family: "Titan One", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 50px;
+      }
+      .space {
+        position: absolute;
+        top: 180px;
+        left: 480px;
+        font-family: 'Londrina Shadow', cursive;
+        font-size: 140px;
+        color: #F3E248;
+      }
+      .rana {
+        position: absolute;
+        right: 0; 
+        top: 0;
+        width: 250px;
+        height: 250px;
+      }
+      
+      .gatoEspacial {
+        position: absolute;
+        left: 150px;
+        top: 50px;
+        width: 280px;
+        height: 250px;
+      }
+      
+      .planetaAzul {
+        position: absolute;
+        right: 80px;
+        top: 500px;
+        width: 80px;
+        height: 80px;
+      }
+      
+      .luna {
+        position: absolute;
+        left: 115px;
+        top: 530px;
+        width: 1050px;
+        height: 200px;
+      }
+      
+      .planetaMorado {
+        position: absolute;
+        left: 0;
+        top: 350px;
+        width: 250px;
+        height: 300px;
+      }
+     
+a{
+        font-size: 25px;
+}
+   
