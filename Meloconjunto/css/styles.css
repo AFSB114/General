@@ -5,6 +5,10 @@
   font-family: 'Georgia', serif;
 }
 
+a{
+  all: unset;
+}
+
 html, body {
   height: 100%;
   overflow: hidden; /* Elimina cualquier barra de desplazamiento */
