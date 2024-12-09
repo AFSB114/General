@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Georgia', serif;
+}
+
+a{
+  all: unset;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden; /* Elimina cualquier barra de desplazamiento */
+}
+
+.container-fluid {
+  height: 100vh; /* Asegura que todo el contenido ocupe la pantalla completa */
+}
+
+.header {
+  background-color: #6d6244; /* Color de fondo actualizado */
+  padding: 20px;
+  display: flex; /* Permite al header utilizar flexbox */
+  align-items: center; /* Centra verticalmente el contenido */
+  border-bottom: 2px solid #000000; /* Borde negro */
+}
+
+.logo {
+  height: 60px; /* Aumenta el tamaño del logo */
+  width: 80px; /* Mantiene la proporción del logo */
+  object-fit: contain;
+  margin-right: 10px; /* Espacio entre el logo y el título */
+}
+
+.logo-title {
+  font-size: 35px; /* Ajusta el tamaño del texto del título */
+  color: #000000; /* Color del texto actualizado */
+  font-weight: bold;
+}
+
+.sidebar {
+  background-color: #94855a; /* Color de fondo actualizado */
+  padding: 15px;
+  padding-left: 25px;
+}
+
+.sidebar-title {
+  font-size: 23px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #000000; /* Cambiado para un mejor contraste */
+}
+
+.sidebar li {
+  color: #000000; /* Color del texto de los elementos de la barra lateral */
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s;
+  font-size: 12.7px;
+  font-weight: bold;
+}
+
+.sidebar li:hover {
+  color: #e7cf8a; /* Color al pasar el mouse */
+  font-weight: bold;
+}
+
+.main-content {
+  background-color: #fff6de; /* Color de fondo actualizado */
+  color: #000000; /* Color del texto en el contenido principal */
+  padding: 15px;
+  font-size: 15px;
+  overflow-y: auto;
+  font-weight: bold;
+  border-left: 2px solid #000000; /* Borde negro */
+}
+
+.main-title {
+  font-size: 28px; /* Ajusta el tamaño del título principal */
+  margin-bottom: 20px;
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.folder {
+  position: relative;
+  background-color: #e7cf8a; /* Cambia aquí el color de fondo */
+  border: 2px solid #000000; /* Borde negro */
+  border-radius: 4px;
+  padding: 15px 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  color: inherit; /* Asegúrate de que 'inherit' se ajuste a lo que necesitas */
+  display: block;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 90%; /* Reduce el ancho de las carpetas */
+  height: 80px; /* Ajusta el alto de las carpetas */
+  margin: auto; /* Centra las carpetas dentro de su contenedor */
+  border-top-left-radius: 10px; /* Esquinas superiores redondeadas */
+  border-top-right-radius: 10px; /* Esquinas superiores redondeadas */
+  overflow: hidden; /* Esconde cualquier contenido que se salga del área */
+}
+
+.folder:hover {
+  transform: translateY(-5px); /* Eleva la carpeta al pasar el mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+
+.folder-title {
+  margin: 0; /* Elimina márgenes */
+  font-weight: bold; /* Negrita el texto del título de la carpeta */
+}
+
+/*.content-box {
+  display: none; /* Ocultar todos los cuadros por defecto
+}*/

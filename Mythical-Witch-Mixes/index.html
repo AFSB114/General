@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythical Witch Mixes</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f3f7;
+        }
+        nav {
+            background-color: #6f42c1;
+        }
+        .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #d1d1d1 !important;
+        }
+        .navbar-brand img {
+            border-radius: 12px;
+        }
+        .section-title {
+            font-size: 3rem;
+            color: #6f42c1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        .px-4.py-5.my-5.text-center {
+            background: linear-gradient(145deg, #e6c3f1, #d2aef4);
+            padding: 60px 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .display-5 {
+            font-size: 3.5rem;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .lead {
+            color: #eee;
+            font-size: 1.2rem;
+        }
+        .btn-primary {
+            background-color: #5e35b1;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #452f96;
+        }
+        .btn-outline-secondary {
+            color: #5e35b1;
+            border-color: #5e35b1;
+            transition: all 0.3s ease;
+        }
+        .btn-outline-secondary:hover {
+            background-color: #5e35b1;
+            color: #fff;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section-content {
+            font-size: 1.2rem;
+            color: #555;
+            text-align: justify;
+        }
+        .team-section {
+            margin-top: 50px;
+        }
+        .team-section h1 {
+            font-size: 4rem;
+            color: #6f42c1;
+            margin-bottom: 50px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card {
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        .card img {
+            border-radius: 15px 15px 0 0;
+            height: 350px;
+            object-fit: cover;
+        }
+        .card-body h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #5e35b1;
+        }
+        .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!---navegador-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./40f3505e-b87a-4936-af50-4de75c7ab360.jpg" alt="Logo" width="80" height="70">
+            </a>
+            <a class="navbar-brand" href="../">ADSO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="font-size: 2.0rem;">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyecto" style="font-size:2.0rem; margin-left: 30px;">Nuestro Proyecto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  href="#" role="button" style="font-size:2.0rem;" data-bs-toggle="dropdown" aria-expanded="false">
+                          Documentos necesarios
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" style="font-size:2.0rem;" href="Resumen Ejecutivo.pdf">Resumen ejecutivo</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" style="font-size:2.0rem;" href="Introducción.pdf">Introducción</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" style="font-size:2.0rem;" href="Descripción del proyecto.pdf">Descripción del sistema</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" style="font-size:2.0rem;" href="Historial de usuario.pdf">Historia de usuario</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" style="font-size:2.0rem;" href="Requisitos del proyecto.pdf">Requisitos del proyecto</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" style="font-size:2.0rem;" href="Requisitos.xlsx">Software y hardware</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" style="font-size:2.0rem;" href="plan de trabajo.pdf">Plan de trabajo</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" style="font-size:2.0rem;" href="presupuesto.pdf">Presupuesto</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" style="font-size:2.0rem;" href="cronograma de pagos.pdf">Cronograma de pagos</a></li>
+                        </ul>
+                      </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!---/navegador-->
+
+<!--explicando el sistema-->
+<div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="./WhatsApp Image 2024-10-21 at 7.36.01 AM.jpeg" alt="" width="482" height="237">
+    <h1 class="display-5 fw-bold">Mythical Witch Mixes</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4" style="text-align: justify;">Nuestro sistema, inicialmente titulado "Mythical Witch Mixes", es un juego 
+            interactivo desarrollado en formato web, basado en la teoría de conjuntos. En 
+            este juego, los usuarios se embarcarán en una aventura mágica en la que deberán 
+            combinar diversos ingredientes para crear pociones y superar desafíos. A través 
+            de estas combinaciones, los jugadores aprenderán de manera indirecta y 
+            divertida los principios de la teoría de conjuntos, aplicada en la creación de 
+            combinaciones estratégicas.</p>
+    </div>
+</div>
+<!--/explicando el sistema-->
+
+<!-- Sección Nuestro Proyecto -->
+<div id="proyecto" class="section text-center">
+    <div class="container">
+        <h2 class="section-title">Nuestro Proyecto</h2>
+        <p class="section-content">El proyecto "Mythical Witch Mixes" tiene como objetivo ofrecer una experiencia de juego única donde los jugadores puedan aprender conceptos matemáticos como la teoría de conjuntos, mientras crean pociones mágicas a partir de la combinación de ingredientes. El proyecto combina educación y entretenimiento para captar la atención de un público joven.</p>
+    </div>
+</div>
+<!-- /Sección Nuestro Proyecto -->
+
+<!-- Sección Solución -->
+<div id="solucion" class="section text-center bg-light">
+    <div class="container">
+        <h2 class="section-title">Solución</h2>
+        <p class="section-content">Nuestra solución para abordar los desafíos educativos es integrar la teoría de conjuntos de una manera visual y práctica, utilizando combinaciones de elementos para enseñar a los jugadores conceptos matemáticos clave. Además, la naturaleza interactiva y divertida del juego garantiza que el aprendizaje sea envolvente y atractivo.</p>
+    </div>
+</div>
+<!-- /Sección Solución -->
+
+<!-- Sección Contáctanos -->
+<div id="contacto" class="section text-center">
+    <div class="container">
+        <h2 class="section-title">Contáctanos</h2>
+        <p class="section-content">Si tienes alguna pregunta o deseas más información sobre nuestro proyecto, no dudes en contactarnos. Estaremos encantados de responder cualquier duda que tengas y brindarte toda la información que necesites.</p>
+    </div>
+</div>
+<!-- /Sección Contáctanos -->
+
+<!-- Sección del equipo de trabajo -->
+<div class="container text-center team-section">
+    <h1>Equipo de trabajo</h1>
+    <div class="row align-items-center justify-content-center">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="/WhatsApp Image 2024-10-21 at 7.58.02 AM (1).jpeg" class="card-img-top" alt="Keiner Andrés Cano">
+                <div class="card-body">
+                    <h2>Keiner Andrés </h2>
+                    <p>Desarrollador Backend</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="/WhatsApp Image 2024-10-21 at 7.58.02 AM.jpeg" class="card-img-top" alt="Francisco Martínez">
+                <div class="card-body">
+                    <h2>Francisco Andrade</h2>
+                    <p>Desarrollador Frontend</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="/WhatsApp Image 2024-10-21 at 7.58.03 AM.jpeg" class="card-img-top" alt="Kevin Andrés Cano">
+                <div class="card-body">
+                    <h2>Cristofer David </h2>
+                    <p>Administrador de base de datos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---Fin del equipo de trabajo-->
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

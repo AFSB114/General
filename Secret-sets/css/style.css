@@ -1,0 +1,112 @@
+  /* Animación de fade-in para secciones */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Estilo para el cuerpo */
+body {
+    background-color: #f0f2f5; /* Fondo gris claro */
+    color: #333; /* Texto gris oscuro */
+}
+
+/* Animación para las imágenes de los miembros */
+.rounded-circle {
+    transition: transform 0.3s ease-in-out;
+}
+
+.rounded-circle:hover {
+    transform: scale(1.1);
+}
+
+/* Efecto hover para los enlaces del menú */
+.nav-link {
+    color: #28a745; /* Verde */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #fff;
+    background-color: #218838; /* Verde oscuro */
+}
+
+/* Estilos para la sección de equipo */
+section {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #004080; /* Azul oscuro */
+}
+
+h4 {
+    color: #28a745; /* Verde */
+}
+
+/* Ajustes de margen y alineación */
+.container {
+    padding: 2rem;
+}
+
+/* Hover para las tarjetas de los miembros del equipo */
+.col-md-4 {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.col-md-4:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Personalización del texto y colores */
+p {
+    color: #666; /* Texto gris más claro */
+}
+
+/* ----------- Nuevos estilos para el header ----------- */
+header {
+    background: linear-gradient(135deg, #004080, #28a745); /* Fondo degradado azul a verde */
+    color: #fff; /* Texto blanco */
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra en el texto */
+}
+
+nav {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Línea separadora en el menú */
+}
+
+.nav-pills .nav-link {
+    color: #fff; /* Texto blanco para los enlaces */
+    background-color: transparent;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Hover translúcido */
+}
+
+.nav-pills .nav-link.active {
+    background-color: #28a745; /* Enlace activo en verde */
+}
+
+/* ----------- Estilos para el logo centrado ----------- */
+.logo-container {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.logo-container img {
+    width: 230px; /* Ajusta el tamaño del logo */
+    height: auto;
+    animation: fadeIn 2s ease-in-out;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interfaz</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="header d-flex align-items-center">
+    <img src="img/logo.png" alt="Logo" class="logo">
+    <h1 class="logo-title">MeloConjunto</h1>
+  </header>
+
+  <div class="container-fluid h-100">
+    <div class="row h-100">
+      <aside class="col-2 sidebar">
+        <h2 class="sidebar-title">Contenido</h2>
+        <ul>
+          <li><a href="../">ADSO</a></li>
+          <li onclick="showContent('todos')">Mostrar Todo</li>
+          <li onclick="showContent('resumen')">Resumen ejecutivo</li>
+          <li onclick="showContent('introduccion')">Introducción</li>
+          <li onclick="showContent('descripcion')">Descripción del proyecto</li>
+          <li onclick="showContent('solucion')">Solución propuesta</li>
+          <li onclick="showContent('plan')">Plan de trabajo</li>
+          <li onclick="showContent('equipo')">Equipo de trabajo</li>
+          <li onclick="showContent('presupuesto')">Presupuesto</li>
+          <li onclick="showContent('mantenimiento')">Mantenimiento y soporte</li>
+          <li onclick="showContent('cronograma')">Cronograma de pagos</li>
+          <li onclick="showContent('anexos')">Anexos</li>
+          <li onclick="showContent('requerimientos')">Requerimientos Funcionales</li>
+          <li onclick="showContent('mer')">MER</li>
+          <li onclick="showContent('diagrama')">Diagrama Caso de Usos</li>
+          <li onclick="showContent('reqSoftware')">Requerimientos de Software</li>
+          <li onclick="showContent('reqHardware')">Requerimientos de Hardware</li>
+        </ul>
+      </aside>
+
+      <main class="col-10 main-content">
+        <h1 class="main-title">CONTENIDO PROPUESTA TÉCNICA Y ECONÓMICA</h1>
+        <div class="row">
+          <div id="resumen" class="col-md-6 col-lg-3 mb-4 content-box">
+            <a href="archivos/ResumenEjecutivo.pdf" class="folder text-dark p-3 rounded shadow-sm" target="_blank">
+              <p class="folder-title">Resumen ejecutivo</p>
+            </a>
+          </div>
+          <div id="introduccion" class="col-md-6 col-lg-3 mb-4 content-box">
+            <a href="archivos/Introduccion.pdf" class="folder text-dark p-3 rounded shadow-sm" target="_blank">
+              <p class="folder-title">Introducción</p>
+            </a>
+          </div>
+          <div id="descripcion" class="col-md-6 col-lg-3 mb-4 content-box">
+            <a href="archivos/DescripcionProyecto.pdf" class="folder text-dark p-3 rounded shadow-sm" target="_blank">
+              <p class="folder-title">Descripción del proyecto</p>
+            </a>
+          </div>
+          <div id="solucion" class="col-md-6 col-lg-3 mb-4 content-box">
+            <a href="archivos/SolucionPropuesta.pdf" class="folder text-dark p-3 rounded shadow-sm" target="_blank">
+              <p class="folder-title">Solución propuesta</p>
+            </a>
+          </div>
+          <div id="plan" class="col-md-6 col-lg-3 mb-4 content-box">
+            <a href="archivos/PlanTrabajo.pdf" class="folder text-dark p-3 rounded shadow-sm" target="_blank">
+              <p class="folder-title">Plan de trabajo</p>
+            </a>
+          </div>
+          <div id="equipo" class="col-md-6 col-lg-3 mb-4 content-box">
+            <a href="archivos/EquipoTrabajo.pdf" class="folder text-dark p-3 rounded shadow-sm" target="_blank">
+              <p class="folder-title">Equipo de trabajo</p>
+            </a>
+          </div>
+          <div id="presupuesto" class="col-md-6 col-lg-3 mb-4 content-box">
+            <a href="archivos/Presupuesto.pdf" class="folder text-dark p-3 rounded shadow-sm" target="_blank">
+              <p class="folder-title">Presupuesto</p>
+            </a>
+          </div>
+          <div id="mantenimiento" class="col-md-6 col-lg-3 mb-4 content-box">
+            <a href="archivos/MantenimientoSoporte.pdf" class="folder text-dark p-3 rounded shadow-sm" target="_blank">
+              <p class="folder-title">Plan de Mantenimiento y soporte</p>
+            </a>
+          </div>
+          <div id="cronograma" class="col-md-6 col-lg-3 mb-4 content-box">
+            <a href="archivos/CronogramaPagos.pdf" class="folder text-dark p-3 rounded shadow-sm" target="_blank">
+              <p class="folder-title">Cronograma de pagos</p>
+            </a>
+          </div>
+          <div id="anexos" class="col-md-6 col-lg-3 mb-4 content-box">
+            <a href="archivos/Anexos.pdf" class="folder text-dark p-3 rounded shadow-sm" target="_blank">
+              <p class="folder-title">Anexos</p>
+            </a>
+          </div>
+          <div id="requerimientos" class="col-md-6 col-lg-3 mb-4 content-box">
+            <a href="archivos/Requerimientos.pdf" class="folder text-dark p-3 rounded shadow-sm" target="_blank">
+              <p class="folder-title">Requerimientos Funcionales y No Funcionales</p>
+            </a>
+          </div>
+          <div id="mer" class="col-md-6 col-lg-3 mb-4 content-box">
+            <a href="archivos/MER.pdf" class="folder text-dark p-3 rounded shadow-sm" target="_blank">
+              <p class="folder-title">MER</p>
+            </a>
+          </div>
+          <div id="diagrama" class="col-md-6 col-lg-3 mb-4 content-box">
+            <a href="archivos/DiagramaCasoUsos.pdf" class="folder text-dark p-3 rounded shadow-sm" target="_blank">
+              <p class="folder-title">Diagrama Caso de Usos</p>
+            </a>
+          </div>
+          <div id="reqSoftware" class="col-md-6 col-lg-3 mb-4 content-box">
+            <a href="archivos/RequerimientosSoftware.pdf" class="folder text-dark p-3 rounded shadow-sm" target="_blank">
+              <p class="folder-title">Requerimientos de Software</p>
+            </a>
+          </div>
+          <div id="reqHardware" class="col-md-6 col-lg-3 mb-4 content-box">
+            <a href="archivos/RequerimientosHardware.xlsx" class="folder text-dark p-3 rounded shadow-sm" target="_blank">
+              <p class="folder-title">Requerimientos de Hardware</p>
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

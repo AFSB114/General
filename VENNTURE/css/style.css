@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Pixeloid Sans Bold';
+    src: url('../fonts/pixeloidsans-bold-webfont.woff') format('woff'),
+        url('../fonts/pixeloidsans-bold-webfont.woff2') format('woff2'),
+        url('../fonts/pixeloidsans-bold-webfont.ttf') format('truetype');
+}
+
+body {
+    background-image: url("../img/Fondo.svg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow-x: hidden;
+}
+
+.tittle {
+    color: white;
+    font-size: 9.5vw;
+    text-align: center;
+    font-family: 'Pixeloid Sans Bold';
+    font-weight: 900;
+    text-shadow:
+        1px 1px 0 black,
+        2px 2px 0 black,
+        3px 3px 0 black,
+        4px 4px 0 black,
+        5px 5px 0 black,
+        6px 6px 0 black,
+        7px 7px 0 black,
+        8px 8px 0 black,
+        9px 9px 0 black,
+        10px 10px 0 black;
+}
+
+.tittle-little {
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    font-family: 'Pixeloid Sans Bold';
+    font-weight: 900;
+    text-shadow:
+        1px 1px 0 black,
+        2px 2px 0 black,
+        3px 3px 0 black,
+        4px 4px 0 black;
+}
+
+.photo {
+    justify-self: center;
+
+    border-radius: 50%;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 20vh;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+.carol {
+    background-image: url("../img/carol.png");
+}
+
+.andres {
+    background-image: url("../img/andres.png");
+}
+
+.valen {
+    background-image: url("../img/valen.png");
+}
+
+.johan {
+    background-image: url("../img/johan.png");
+}
+
+.alex  {
+    background-image: url("../img/alex.png");
+}
+
+.nombre {
+    color: white;
+    text-align: center;
+}
+
+.rol {
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,200 @@
+/* Fondo de gradiente */
+body {
+  background: linear-gradient(135deg, #f0f0f0, #d3d3d3);
+  color: #333;
+  font-family: "Georgia", serif;
+}
+
+a{
+  all: unset;
+  cursor: pointer;
+}
+
+/* Estilo del encabezado */
+h1.display-4 {
+  font-weight: 600;
+  font-size: 3rem;
+  color: #2c3e50;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+}
+
+/* Subtítulos refinados */
+h2 {
+  font-weight: 500;
+  color: #34495e;
+  position: relative;
+  font-size: 1.75rem;
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+h2:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #34495e;
+  left: 0;
+  bottom: 0;
+}
+
+/* Enlaces elegantes */
+a.text-primary {
+  color: #2c3e50;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid #2c3e50;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+a.text-primary:hover {
+  color: #1abc9c;
+  border-color: #1abc9c;
+}
+
+/* Estilos para listas con márgenes más suaves */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+  color: #555;
+}
+
+ul li i {
+  color: #1abc9c;
+  margin-right: 0.5rem;
+}
+
+/* Tablas refinadas */
+table {
+  border-collapse: collapse;
+  background-color: #fafafa;
+  margin-top: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  width: 100%;
+}
+
+/* Estilos refinados para la tabla de cronograma */
+.table-schedule {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 1.5rem;
+  overflow: hidden;
+}
+
+.table-schedule th {
+  background-color: #34495e;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.table-schedule td {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #555;
+  border-top: 1px solid #eee;
+}
+
+.table-schedule tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-schedule tbody tr:hover {
+  background-color: #ecf0f1;
+  transition: background-color 0.3s ease;
+}
+
+/* Botón elegante */
+.btn-custom {
+  background-color: #1abc9c;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 0.6rem 2rem;
+  box-shadow: 0 4px 8px rgba(26, 188, 156, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+  background-color: #16a085;
+  box-shadow: 0 6px 12px rgba(26, 188, 156, 0.3);
+}
+
+/* Footer elegante */
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+/* Estilos personalizados para la sección de equipo */
+#equipo {
+    background: linear-gradient(135deg, #ebf8e1, #d1e7f1);
+    padding: 5rem 0;
+  }
+  
+  #equipo h2 {
+    font-size: 2.5rem;
+    color: #34495e;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  #equipo h2:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #2980b9;
+    margin: 1rem auto 0;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-height: 480px;
+    overflow-y: auto;
+    overflow-x: auto;
+    max-width: 500px;
+    height: auto;
+    width: auto;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2980b9;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+   
+  }

@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 80%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
